@@ -1,0 +1,180 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: #333;
+
+    background-image: url("https://img.freepik.com/foto-gratis/sistema-hidroponia-siembra-vegetales-hierbas-usar-tierra-salud_1150-8153.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    position: relative;
+    z-index: 0;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.35); /* capa oscura */
+    z-index: -1;
+}
+
+header {
+    text-align: center;
+    padding: 50px 20px;
+
+    background-image: url("img/675.jpg");
+    background-repeat: repeat;   
+    background-size: auto;       
+
+    color: white;
+    position: relative;
+
+}
+
+header h1 {
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.45); /* más oscuro */
+}
+
+header h1,
+header p {
+    position: relative;
+    z-index: 1;
+}
+
+nav {
+    background: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+section {
+    width: 80%;
+    max-width: 600px;      
+    
+    margin: 40px auto;     
+    padding: 30px;
+
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2); 
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#inicio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    gap: 20px;
+    padding: 20px;
+}
+
+.bloque {
+    background: rgba(255, 255, 255, 0.95);
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 768px) {
+    #inicio {
+        grid-template-columns: 1fr;
+    }
+}
+
+.bloque img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    margin-top: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #4CAF50;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #45a049;
+
+.bloque a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.bloque a:hover {
+    background: #388e3c;
+}
+
+}
